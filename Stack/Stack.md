@@ -23,7 +23,7 @@ To explain how a stack works, we will be using the example of a stack of plates 
 
 A stack in Python works much the same way. Adding to the back of the stack is called a **Push**. Removing from the back of the stack is called a **Pop**. Normally you do not **push** or **pop** from the middle of the stack as it is not as efficient as working from the back.
 
-![Stack animation](stack.gif)
+![Stack animation](Stack.gif)
 
 ## Operations
 
