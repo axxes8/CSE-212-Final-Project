@@ -21,9 +21,9 @@ A stack is a data structure that follows a particular order in which the operati
 ## Using a Stack
 To explain how a stack works, we will be using the example of a stack of plates at a buffet line. When you want to add a plate to the stack, you are only able to add them to the top of the stack. If you want to take away a plate, you can only remove them from the top.
 
-A stack in Python works much the same way. Adding to the back of the stack is called a **Push**. Removing from the back of the stack is called a **Pop**. Normally you do not push or pop from the middle of the stack as it is not as efficient as working from the back.
+A stack in Python works much the same way. Adding to the back of the stack is called a **Push**. Removing from the back of the stack is called a **Pop**. Normally you do not **push** or **pop** from the middle of the stack as it is not as efficient as working from the back.
 
-[Stack animation](stack.gif)
+![Stack animation](stack.gif)
 
 ## Operations
 
