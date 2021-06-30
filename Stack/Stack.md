@@ -1,6 +1,6 @@
 # Stack
 
-## [Overview](Stack.md)
+## Overview
 * [What is a stack?](#what-is-a-stack)
 * [Using a stack](#using-a-stack)
     * Stack of plates
@@ -33,4 +33,4 @@ A stack in Python works much the same way. Adding to the back of the stack is ca
 
 ## Try it Yourself!
 
-Ready of the [next challenge](../Linked_list/Linked_list.md)? or [Return to overview](../welcome.md)
+Ready of the [next challenge](../Linked_list/Linked_list.md)? or [Return to overview](../Welcome.md)
