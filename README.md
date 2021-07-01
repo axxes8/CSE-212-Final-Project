@@ -9,7 +9,7 @@ Taylor Frisby - June 2021
 * What is a stack?
 * Using a stack
     * Stack of plates
-    * Undo
+    * Undo Function
 * Operations
     * Push
     * Pop
