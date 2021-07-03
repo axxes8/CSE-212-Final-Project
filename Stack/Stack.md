@@ -5,7 +5,7 @@
 * [Using a stack](#using-a-stack)
     * Stack of plates
     * Undo Function
-* [Operations & Performance](#operations)
+* [Operations & Performance](#operations-and-performance)
     * Push
     * Pop
     * Peek
@@ -36,7 +36,7 @@ On the second stack, we can see that when the undo button is pressed, it will **
 
 Now we can add five more words to the stack. If we type *"scurries under the red barn"*, we can see that each word was **Pushed** onto the stack replacing the original phrase.
 
-## Operations & Performance
+## Operations and Performance
 Let's review some of the operations of a stack.
 
 | Stack Operations | Description | Python Code | Performance |
