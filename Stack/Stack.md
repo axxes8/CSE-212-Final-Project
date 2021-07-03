@@ -15,7 +15,7 @@
 
 
 ## What is a Stack?
-A stack is a data structure that follows a particular order in which the operations are to be performed. The order is primarily refered to as *"Last in, First Out"* or *"LIFO"*. The stack can be used to complete many different tasks, and in this tutorial will be implemented with a python list.
+A stack is a data structure that follows a particular order in which the operations are to be performed. The order is primarily referred to as *"Last in, First Out"* or *"LIFO"*. The stack can be used to complete many different tasks, and in this tutorial will be implemented with a python list.
 
 ## Using a Stack
 ### **A Stack of Plates**
@@ -26,7 +26,7 @@ To explain how a stack works, we will be using the example of a stack of plates 
 A stack in Python works much the same way. Adding to the back of the stack is called a **Push**. Removing from the back of the stack is called a **Pop**. Normally you do not **push** or **pop** from the middle of the stack as that is not as efficient as working from the back. We will talk more about performance later.
 
 ### **Undo Function**
-Another example of how a stack can be used is in an undo function seen in most word processing programs. The words you type are **pushed** onto the stack. This creates a history of what has been typed. When you press undo the words are **poped** off of the stack. Lets look at an example.
+Another example of how a stack can be used is in an undo function seen in most word processing programs. The words you type are **pushed** onto the stack. This creates a history of what has been typed. When you press undo the words are **popped** off of the stack. Let's look at an example.
 
 ![Undo Example](Undo.jpg)
 
@@ -37,17 +37,17 @@ On the second stack, we can see that when the undo button is pressed, it will **
 Now we can add five more words to the stack. If we type *"scurries under the red barn"*, we can see that each word was **Pushed** onto the stack replacing the original phrase.
 
 ## Operations & Performance
-Lets review some of the operations of a stack.
+Let's review some of the operations of a stack.
 
 | Stack Operations | Description | Python Code | Performance |
 |-|-|-|-|
-|push(value)|Adds "value" the the back of the stack.|stack.append(value)|O(1) Performance of adding to the end of a dynamic array|
+|push(value)|Adds "value" to the back of the stack.|stack.append(value)|O(1) Performance of adding to the end of a dynamic array|
 |pop()|Removes and returns the item from the back of the stack.| value = stack.pop()|O(1) performance of removing from the end of dynamic array|
 |peek()|Returns the top item of the stack.|stack[len(stack)-1]|O(1) performance of returning the last item of the dynamic array|
 |empty()|Boolean expression returns true if length of stack is zero.| if len(stack) == 0:|O(1) performance of checking the size of the dynamic array.
 
 ## Code Example
-Now lets implement a stack.
+Now let's implement a stack.
 
 We must first implement the stack. We can do that with the following code:
 
@@ -64,13 +64,13 @@ def push(stack, item):
     stack.append(item) # When we push onto the stack, we use .append to add to the back.
 ```
 
-Before we implement pop() or peek(), we will want to check if the stack is empty. So lets implement empty().
+Before we implement pop() or peek(), we will want to check if the stack is empty. So let's implement empty().
 ```python
 def empty(stack):
     return len(stack) == 0 # This will return true if the length of the stack is 0
 ```
 
-Now lets implement pop().
+Now let's implement pop().
 
 ```python
 def pop(stack):
@@ -80,7 +80,7 @@ def pop(stack):
         stack.pop() # Pop from the back of the list
 ```
 
-Finaly lets implement peek().
+Finally let's implement peek().
 ```python
 def peek(stack):
     if (empty(stack)): # Check to see if the stack is empty
@@ -90,7 +90,7 @@ def peek(stack):
 
 ```
 
-Congratulations! We have implemented a stack. You can view the full code implementation [here](stack1.py).
+Congratulations! You have implemented a stack. You can view the full code implementation [here](stack1.py).
 
 ## Try it Yourself!
 Now that you know how a stack works, try to use a stack to reverse the following strings of text:
@@ -103,4 +103,4 @@ a nut for a jar of tuna
 
 To view the solution click [here](stack2.py).
 
-Ready of the [next challenge](../Linked_list/Linked_list.md)? or [Return to overview](../README.md)
+Ready for the [next challenge](../Linked_list/Linked_list.md)? or [Return to overview](../README.md)
