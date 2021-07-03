@@ -5,12 +5,11 @@
 * [Using a stack](#using-a-stack)
     * Stack of plates
     * Undo Function
-* [Operations](#operations)
+* [Operations & Performance](#operations)
     * Push
     * Pop
-    * Size
+    * Peek
     * Empty
-* [Performance](#performance)
 * [Code Example](#code-example)
 * [Try it Yourself!](#try-it-yourself)
 
@@ -37,17 +36,71 @@ On the second stack, we can see that when the undo button is pressed, it will **
 
 Now we can add five more words to the stack. If we type *"scurries under the red barn"*, we can see that each word was **Pushed** onto the stack replacing the original phrase.
 
-## Operations
+## Operations & Performance
 Lets review some of the operations of a stack.
 
 | Stack Operations | Description | Python Code | Performance |
 |-|-|-|-|
-| push(value)|Adds "value" the the back of the stack.|stack.append(value)|O(1) Performance of adding to the end of a dynamic array|
-
-## Performance
+|push(value)|Adds "value" the the back of the stack.|stack.append(value)|O(1) Performance of adding to the end of a dynamic array|
+|pop()|Removes and returns the item from the back of the stack.| value = stack.pop()|O(1) performance of removing from the end of dynamic array|
+|peek()|Returns the top item of the stack.|stack[len(stack)-1]|O(1) performance of returning the last item of the dynamic array|
+|empty()|Boolean expression returns true if length of stack is zero.| if len(stack) == 0:|O(1) performance of checking the size of the dynamic array.
 
 ## Code Example
+Now lets implement a stack.
+
+We must first implement the stack. We can do that with the following code:
+
+```python
+def createStack():
+    stack = []
+    return stack
+```
+
+Now we can implement each of the operations we mentioned above. We will start with push().
+
+```python
+def push(stack, item):
+    stack.append(item) # When we push onto the stack, we use .append to add to the back.
+```
+
+Before we implement pop() or peek(), we will want to check if the stack is empty. So lets implement empty().
+```python
+def empty(stack):
+    return len(stack) == 0 # This will return true if the length of the stack is 0
+```
+
+Now lets implement pop().
+
+```python
+def pop(stack):
+    if (empty(stack)): # Check to see if the stack is empty
+        print("Stack is empty")
+    else:
+        stack.pop() # Pop from the back of the list
+```
+
+Finaly lets implement peek().
+```python
+def peek(stack):
+    if (empty(stack)): # Check to see if the stack is empty
+        print("stack is empty")
+    else:
+        print(stack[len(stack) - 1]) # Print the last item in the list
+
+```
+
+Congratulations! We have implemented a stack. You can view the full code implementation [here](stack1.py).
 
 ## Try it Yourself!
+Now that you know how a stack works, try to use a stack to reverse the following strings of text:
+
+racecar
+
+stressed
+
+a nut for a jar of tuna
+
+To view the solution click [here](stack2.py).
 
 Ready of the [next challenge](../Linked_list/Linked_list.md)? or [Return to overview](../README.md)

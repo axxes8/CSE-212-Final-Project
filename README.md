@@ -10,12 +10,11 @@ Taylor Frisby - June 2021
 * Using a stack
     * Stack of plates
     * Undo Function
-* Operations
+* Operations & Performance
     * Push
     * Pop
-    * Size
+    * Peek
     * Empty
-* Performance
 * Code Example
 * Try it Yourself!
 
