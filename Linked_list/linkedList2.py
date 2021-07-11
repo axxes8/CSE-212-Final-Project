@@ -1,5 +1,5 @@
 '''
-Solution to the try it yourself chalenge
+Solution to the try it yourself challenge
 '''
 
 class LinkedList:
@@ -36,7 +36,7 @@ class LinkedList:
         new_node = LinkedList.Node(value)
         curr = self.head
 
-        # If the location of vale is at the tail, we make this the new tail
+        # If the location of value is at the tail, we make this the new tail
         while curr is not None:
             if curr.data == value:
                 if curr == self.tail:
@@ -159,7 +159,7 @@ numbers.remove_middle(2)
 print("After removing 2 from LinkedList: {}\n".format(numbers))
 # [4, 3, 8, 1]
 
-# using the iteratior to print all the numbers in LinkedList
+# using the iterator to print all the numbers in LinkedList
 print("All numbers in LinkedList:")
 for x in numbers:
     print(x)

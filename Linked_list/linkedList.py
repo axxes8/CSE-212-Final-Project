@@ -78,7 +78,7 @@ print("Inserting a few numbers: {}\n".format(numbers))
 numbers.remove_head()
 print("After removing head: {}\n".format(numbers))
 
-# using the iteratior to print all the numbers in LinkedList
+# using the iterator to print all the numbers in LinkedList
 print("All numbers in LinkedList:")
 for x in numbers:
     print(x)

@@ -15,7 +15,7 @@
 * [Try it Yourself](#try-it-yourself)
 
 ## What is a Linked List?
-Unlike a dynamic array where each item in the list is contiguous in memory, the items in a linked list are stored randomly within memory. In order to know where each item (or **Node**) is, each **Node** contains the value, and also the link to the **Next Node**. In a **Doubly-linked List**, the **Node** will also contain the link to the **Previous Node**. The links are **Pointers** to the memory locations where each **Node** is stored.
+Unlike a dynamic array where each item in the list is contiguous in memory, the items in a linked list are stored randomly within memory. In order to know where each item (or **Node**) is, each **Node** contains the value, and also the link to the **Next Node**. In a **Doubly-Linked List**, the **Node** will also contain the link to the **Previous Node**. The links are **Pointers** to the memory locations where each **Node** is stored.
 
 We can see in the **Linked List** below that the first **Node** is called the **Head**. From the **Head** you can traverse the entire linked list by following the pointers.
 
@@ -97,21 +97,21 @@ def traverse_forward(self):
 ```
 ## Operations and Performance
 
-While you can create your own linked list, python has one built in called a **Deque**. To create an empty linked list, use the following import statement: ```import deque```, and the follwing code: ```linked_list = deque()```. Below are some common functions of the **Deque**:
+While you can create your own linked list, python has one built in called a **Deque**. To create an empty linked list, use the following import statement: ```import deque```, and the following code: ```linked_list = deque()```. Below are some common functions of the **Deque**:
 
 |Linked List Operations|Description|Python Code|Performance|
 |-|-|-|-|
-|insert_head(value)|Adds value before the head|**deque.appendleft(value)**|O(1) Just need to adjust the ponters near the head|
-|insert_tail(value)|Adds value after the tail|**deque.append(value)**|O(1) Just need to adjust the ponters near the tail|
-|insert(i,value)|Adds value after node i|**deque.insert(i,value)**|O(n) Requires a loop to find the node to insert after|
-|remove_head()|Removes the head|**deque.popleft()**|O(1) Just need to adjust the ponters near the head|
-|remove_tail()|Removes the tail|**deque.pop()**|O(1) Just need to adjust the ponters near the tail|
+|insert_head(value)|Adds value before the head|**deque.appendleft(value)**|O(1) Just need to adjust the pointers near the head|
+|insert_tail(value)|Adds value after the tail|**deque.append(value)**|O(1) Just need to adjust the pointers near the tail|
+|insert(i,value)|Adds value after node i|**deque.insert(i,value)**|O(n) Requires a loop to find the node to insert after node|
+|remove_head()|Removes the head|**deque.popleft()**|O(1) Just need to adjust the pointers near the head|
+|remove_tail()|Removes the tail|**deque.pop()**|O(1) Just need to adjust the pointers near the tail|
 |remove(i)|Removes the node at i|**del deque(i)**|O(n) Requires a loop to find the node to remove|
 |empty()|Returns true if the length of the linked list is 0|**if len(deque) == 0**| O(1) The comparison is all that is needed|
 
 ## Comparing Linked List to Dynamic Array
 
-The dynamic array and the linked list appear to work the same to the user, but becasue their memory is managed differently, the performance is different between them. The table below compares the two:
+The dynamic array and the linked list appear to work the same to the user, but because their memory is managed differently, the performance is different between them. The table below compares the two:
 |Operation|Dynamic Array|Linked List|
 |-|-|-|
 Insert Front|O(n)|O(1)|
@@ -121,7 +121,7 @@ Remove Front|O(n)|O(1)|
 Remove Middle|O(n)|O(n)|
 Remove End|O(1)|O(1)|
 
-We can see that the dynamic array has good performance only at the end, whereas the linked list had good performance at both the begining and the end. Thinking back to our stack in the previous tutorial, our stack could use either a dynamic array or a linked list with the same performance.
+We can see that the dynamic array has good performance only at the end, whereas the linked list had good performance at both the beginning and the end. Thinking back to our stack in the previous tutorial, our stack could use either a dynamic array or a linked list with the same performance.
 
 ## Code Example
 
@@ -141,7 +141,7 @@ def __init__(self, data):
     self.next = None
     self.prev = None
 ```
-Now we define an empty linked list by setting the head and tail to None. This is done in the LinkedList class
+Now we define an empty linked list by setting the head and tail to None. This is done in the LinkedList class.
 
 ```python
 def __init__(self):
@@ -177,7 +177,7 @@ def remove_head(self):
         self.head = self.head.next
 ```
 
-Lastly let's implement an iterator that will work through the list starting at the head. Curr will keep track of which node we are currently at.
+Lastly, let's implement an iterator that will work through the list starting at the head. Curr will keep track of which node we are currently at.
 ```python
 def __iter__(self):
     curr = self.head
@@ -193,4 +193,4 @@ Now it's your turn. Try to implement insert_tail, remove_tail, insert_middle, an
 
 To view the solution, click [here](linkedList2.py).
 
-Ready of the [next challenge](../Tree/Tree.md)? or [Return to overview](../README.md)
+Ready for the [next challenge](../Tree/Tree.md)? or [Return to overview](../README.md)
