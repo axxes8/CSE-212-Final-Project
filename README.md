@@ -24,13 +24,11 @@ Taylor Frisby - June 2021
     * Inserting data into a linked list
     * Removing data from a linked list
     * Accessing data from a linked list
-* Operations
+* Operations & Performance
     * Insert
     * Remove
-    * Size
     * Empty
-* Performance
-* Comparing to a dynamic array
+* Comparing Linked List to a dynamic array
 * Code Example
 * Try it Yourself
 
