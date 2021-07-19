@@ -33,7 +33,7 @@ A **Binary Tree** is made up of multiple nodes. The first node, known as the **R
 
 A **Binary Search Tree** is very similar to the binary tree mentioned above, however, data placed in the tree follows some simple rules. When placing data into the tree, the data is compared to the data inside the parent node. If the value of the added data is less then the value of the parent, it is placed on the left side. If the data is greater, it is placed on the right side. Any data that has a duplicate value can be placed on either side. By using a Binary Search Tree, the data added to the tree will automatically be stored in sorted order.
 
-![Binary Search Tree](binary-search-tree-1.jpg)
+![Binary Search Tree](Binary-search-tree-1.jpg)
 
 From this tree above, we can determine where new data will be placed. We start at the root node and compare our new value with it. Comparison continues until we find an empty place for the new node.
 
@@ -43,7 +43,7 @@ Let's look at the example below. We have a tree that is already populated with d
 * Now compare again. 12 is less than 14 so the node will go to the left.
 * There is an empty spot there, so our new node will be inserted to the left of 14.
 
-![Inserting into a BST](binary-search-tree-2.jpg)
+![Inserting into a BST](Binary-search-tree-2.jpg)
 
 This process of storing data is very efficient. If we were to store sorted data into either a dynamic array, or a linked list, the performance would be O(n). By using a Binary Search Tree, we only have to work with one half of the data at a time. This results in a performance of O(log n).
 
