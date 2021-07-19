@@ -1,6 +1,6 @@
 # Data Structures Tutorial
 
-## [Welcome](README.md)
+## Welcome
 Below you will find the overview for my Data Structure Tutorial. Click on any of the section headings to view that section.
 
 Taylor Frisby - June 2021
