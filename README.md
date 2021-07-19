@@ -34,20 +34,17 @@ Taylor Frisby - June 2021
 
 ## [Tree](Tree/Tree.md)
 * What is a Tree?
+* Using a Tree
     * Binary Tree
     * Binary Search Tree
     * Balanced Binary Search Tree
-* Recursion
-* Using a Tree
-* Operations
+* Operations & performance
     * Insert
     * Remove
     * Contains
     * Height
     * Traverse_forward
     * Traverse_reverse
-    * Size
     * Empty
-* Performance
 * Code Example
 * Try it Yourself
